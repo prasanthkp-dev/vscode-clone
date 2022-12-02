@@ -8,21 +8,21 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="container">
+    <div class="overflow-hidden">
 
       <!-- navbar section  -->
       
       <section aria-label="navbar">
-        <div class="flex flex-row w-auto items-center bg-[#2C2C32] md:px-40 px-5">
-          <div class="flex gap-5 items-center text-stone-50">
-            <img src="/src/logo.png" alt="logo" class="w-9">
-            <h1 class="text-[20px] mx-auto flex flex items-center">
+        <div class="flex flex-row items-center justify-between bg-[#2C2C32] lg:gap-[30px] fixed top-0 w-[100%] z-[1] px-[5%] sm:px-[12%] lg:px-[5%]">
+          <div class="flex gap-3 items-center text-stone-50">
+            <img src="/src/logo.png" alt="logo" class="w-[25px]">
+            <h1 class="text-[19px] mx-auto flex flex items-center">
               Visual Studio Code
             </h1>
           </div>
   
-          <div class="grow-[2]">
-            <ul class="hidden sm:flex flex md:flex-row w-100 text-[#ccccbd] gap-5 px-5">
+          <div class="md:hidden lg:flex">
+            <ul class="hidden md:flex flex lg:flex-row w-100 text-[#ccccbd] sm:gap-1 md:gap-5">
               <li class="hover:text-slate-50"><a href="#">Docs</a></li>
               <li class="hover:text-slate-50"><a href="#">Update</a></li>
               <li class="hover:text-slate-50"><a href="#">Blog</a></li>
@@ -32,14 +32,14 @@
               <li class="hover:text-slate-50"><a href="#">Learn</a></li>
             </ul>
           </div>
-          <div class="flex flex-row">
-            <div class="search-box">
+          <div class="flex flex-row  md:hidden lg:flex lg:justify-around">
+            <div class="search-box ">
               <form action="" class="flex">
-                <div class="hidden md:flex md:flex-row">
+                <div class="hidden md:flex md:flex-row w-[100%] md:justify-end">
                   <label class="hidden" for="search-doc">Search Docs</label>
-                  <input class="focus:outline-none focus:bg-[#525257] bg-[#3d3d42] text-stone-50 px-12 py-3" type="text" id="search-doc" name="search" placeholder="Search Docs">
+                  <input class="hidden xl:flex focus:outline-none focus:bg-[#525257] bg-[#3d3d42] text-stone-50 pl-12 py-3 w-[70%]" type="text" id="search-doc" name="search" placeholder="Search Docs">
                   <button type="submit" class="text-slate-700 absolute top-1 flex w-10 h-10">
-                    <img class="w-5 absolute top-3 left-4" src="/src/search.svg" alt="search-icon">
+                    <img class="w-5 absolute top-3 md:left-[-40px] lg:top-[10px] lg:left-[8px] xl:left-[-108px]" src="/src/search.svg" alt="search-icon">
                     <span class="absolute top-1 text-transparent w-10 h-10">Submit</span>
                   </button>
                 </div>
@@ -58,80 +58,80 @@
 
       <!-- latest-update section  -->
       
-      <section aria-label="latest-updates">
-        <div class="latest-updates bg-[#25252B] py-3">
+      <section aria-label="latest-updates z-0">
+        <div class="latest-updates bg-[#25252B] absolute top-[45px] w-[100%] px-[7%] py-3">
           <p class="text-center text-[#ccccbd]"><a class="text-blue-600 visited:text-purple-600 hover:underline" href="/updates">Version 1.73</a>
             is now available! Read about the new features and fixes from October. (This clone page is for learning purpose Only)
           </p>
         </div>
       </section>
 
-      <!-- Hero section  -->
+     <!-- Hero section  -->
 
-      <section aria-label="hero">
-        <div class="hero flex flex-col md:flex-row px-[10%] bg-[#2C2C32]">
-          <div class="hero-left flex flex-col md:flex-col items-center pt-[60px] md:w-[50%]">
-            <div class="hero-heading text-[2.3rem] text-stone-50"><h3>Code editing.</h3></div>
-            <div class="hero-sub-heading text-[2.3rem] font-semibold text-stone-50"><h3>Redefined.</h3></div>
-            <div class="description text-center px-400 text-[#ccccbd] py-4">Free. Built on open source. Runs everywhere.</div>
-            <div class="button-group flex gap-[1px]">
-              <a class="flex flex-col bg-[#0066b8] text-center text-stone-50 px-5 py-3 hover:bg-[#005ba4]" href="#"><h3 class="font-medium">Download for Window</h3> <small>Stable Build</small></a>
-              <a class="bg-[#0066b8] w-10 flex justify-center hover:bg-[#005ba4]" href="#"><img class="w-[20px]" src="/src/chevronDown.svg" alt=""></a>
-            </div>
-            <div class="tags text-[#ccccbd] border border-[#25252b] rounded bg-[#25252b] px-2 py-1 my-3">
-              <a class="text-blue-600 hover:underline" href="#">web</a>, <a class="text-blue-600 hover:underline" href="#">Insider edition</a><span>, or </span><a class="text-blue-600 hover:underline" href="#">other platforms</a>
-            </div>
-            <div class="statement text-sm flex flex-col justify-center items-center">
-              <h6 class="text-[#ccccbd]">By using VS Code, you agree to its</h6>
-              <a class="text-blue-600 hover:underline" href="#">license and privacy statement.</a>
-            </div>
+     <section aria-label="hero">
+      <div class="hero flex flex-col justify-center lg:flex-row px-[3rem] sm:px-[8%] pt-[110px] pb-[80px] bg-[#2C2C32]">
+        <div class="hero-left flex flex-col md:flex-col items-center pt-[50px] lg:w-[30%]">
+          <div class="hero-heading text-[2.8rem] font-light text-stone-50"><h3>Code editing.</h3></div>
+          <div class="hero-sub-heading text-[2.8rem] font-normal text-stone-50"><h3>Redefined.</h3></div>
+          <div class="description text-center text-[#ccccbd] py-4 text-[18px]">Free. Built on open source. Runs everywhere.</div>
+          <div class="button-group flex gap-[2px]">
+            <a class="flex flex-col bg-[#0066b8] text-center text-stone-50 px-6 py-3 hover:bg-[#005ba4] transition-all" href="#"><h3 class="font-medium">Download for Window</h3> <small>Stable Build</small></a>
+            <a class="bg-[#0066b8] w-10 flex justify-center hover:bg-[#005ba4]" href="#"><img class="w-[22px]" src="/src/chevronDown.svg" alt=""></a>
           </div>
-  
-          <div class="hero-right">
-            <img class="w-280" src="/src/home-screenshot-win-lg.png" alt="">
+          <div class="tags text-[#ccccbd] border border-[#25252b] rounded bg-[#25252b] text-[14px] px-2 py-1 my-3">
+            <a class="text-blue-600 hover:underline" href="#">web</a>, <a class="text-blue-600 hover:underline" href="#">Insider edition</a><span>, or </span><a class="text-blue-600 hover:underline" href="#">other platforms</a>
+          </div>
+          <div class="statement text-[12px] flex flex-col justify-center items-center">
+            <h6 class="text-[#ccccbd]">By using VS Code, you agree to its</h6>
+            <a class="text-blue-600 hover:underline" href="#">license and privacy statement.</a>
           </div>
         </div>
-      </section>
 
-      <!-- Value Props Section  -->
-      
-      <section aria-label="value-props">
-        <div class="grid grid-cols-2 md:px-[15%] md:grid-cols-4 lg:grid-cols-4 gap-2 md:gap-4 lg:gap-4">
-        <!-- <div class="value-prop flex flex-col md:flex-row md:justify-center gap-24	px-[10%] text-[1.6rem]"> -->
-          <a href="" class="flex flex-col items-center flex-col-reverse hover:bg-[#E3E3E3] p-4"><h5>IntelliSense</h5><img src="/src/bulb-energy-idea-lamp-light-equipment-svgrepo-com.svg" alt="" class="w-[50px]"></a>
-
-          <a class="flex flex-col items-center flex-col-reverse hover:bg-[#E3E3E3] p-4" href="#"><h5>Run and Debug</h5><img class="w-[50px]" src="/src/debug-alt-svgrepo-com.svg" alt=""></a>
-
-          <a class="flex flex-col items-center flex-col-reverse hover:bg-[#E3E3E3] p-4" href="#"><h5>Built-in Git</h5><img class="w-[50px]" src="/src/git-fork-svgrepo-com.svg" alt=""></a>
-          <a class="flex flex-col items-center flex-col-reverse hover:bg-[#E3E3E3] p-4" href=""><h5>Extensions</h5><img class="w-[50px]" src="/src/extension-svgrepo-com.svg" alt=""></a>
+        <div class="hero-right lg:w-[60%]">
+          <img class="w-[1360px]" src="/src/home-screenshot-win-lg.png" alt="">
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- social-proof section -->
+    <!-- Value Props Section  -->
+
+    <section aria-label="value-props">
+      <div class="grid grid-cols-2 md:px-[4%] lg:px-[15%] text-[1.2rem] md:grid-cols-4 lg:grid-cols-4 gap-2 md:gap-4 lg:gap-5">
+      <!-- <div class="value-prop flex flex-col md:flex-row md:justify-center gap-24	px-[10%] text-[1.6rem]"> -->
+        <a href="" class="flex flex-col items-center flex-col-reverse hover:bg-[#E3E3E3] p-4"><h5>IntelliSense</h5><img src="/src/bulb-energy-idea-lamp-light-equipment-svgrepo-com.svg" alt="" class="w-[50px]"></a>
+
+        <a class="flex flex-col items-center flex-col-reverse hover:bg-[#E3E3E3] p-4" href="#"><h5>Run and Debug</h5><img class="w-[50px]" src="/src/debug-alt-svgrepo-com.svg" alt=""></a>
+
+        <a class="flex flex-col items-center flex-col-reverse hover:bg-[#E3E3E3] p-4" href="#"><h5>Built-in Git</h5><img class="w-[50px]" src="/src/git-fork-svgrepo-com.svg" alt=""></a>
+        <a class="flex flex-col items-center flex-col-reverse hover:bg-[#E3E3E3] p-4" href=""><h5>Extensions</h5><img class="w-[50px]" src="/src/extension-svgrepo-com.svg" alt=""></a>
+      </div>
+    </section>
+
+      <!-- social-proof section Start-->
 
       <section aria-label="social-proof ">
-        <div class="social-proof flex flex-col gap-5 md:flex-row px-[15%] py-[75px] bg-[#F5F5F5]">
+        <div class="social-proof flex flex-col gap-5 lg:flex-row px-[15%] py-[75px] lg:px-[7%] bg-[#F5F5F5]">
           <div class="user-1 flex gap-2">
-            <div class="user-avatar"><img class="rounded-full w-40" src="/src/Una.jpg" alt=""></div>
+            <div class="user-avatar"><img class="rounded-full w-[400px] lg:w-[300px]" src="/src/Una.jpg" alt=""></div>
             <div class="user-data">
-            <div class="user flex"><strong class="hover:text-[#005ba4]">Una Kravets</strong><span>@una</span><img src="/src/twitter-svgrepo-com.svg" alt="" class="w-5 relative left-[100px]"></div>
-            <div class="body w-[80%]">VS <a class="text-[#005893] hover:underline" href="https://twitter.com/code" target="_blank">@code</a> does so many things right. I’m constantly impressed by the UX, and customizing workspace / user preferences is no exception. 🙌🏼💯 It just keeps getting better ❤️</div>
+            <div class="user flex"><strong class="hover:text-[#005ba4]">Una Kravets</strong><span>@una</span><img src="/src/twitter-svgrepo-com.svg" alt="" class="w-5 relative left-[60px] sm:left-[100px] md:left-[14rem] lg:left-[4rem]"></div>
+            <div class="body">VS <a class="text-[#005893] hover:underline" href="https://twitter.com/code" target="_blank">@code</a> does so many things right. I’m constantly impressed by the UX, and customizing workspace / user preferences is no exception. 🙌🏼💯 It just keeps getting better ❤️</div>
             </div>
           </div>
 
           <div class="user-2 flex gap-2">
-            <div class="user-avatar"><img class="rounded-full w-40" src="/src/Una.jpg" alt=""></div>
+            <div class="user-avatar"><img class="rounded-full w-[400px] lg:w-[300px]" src="/src/Una.jpg" alt=""></div>
             <div class="user-data">
-            <div class="user flex"><strong class="hover:text-[#005ba4]">Una Kravets</strong><span>@una</span><img src="/src/twitter-svgrepo-com.svg" alt="" class="w-5 relative left-[100px]"></div>
-            <div class="body w-[80%]">VS <a class="text-[#005893] hover:underline" href="https://twitter.com/code" target="_blank">@code</a> does so many things right. I’m constantly impressed by the UX, and customizing workspace / user preferences is no exception. 🙌🏼💯 It just keeps getting better ❤️</div>
+            <div class="user flex"><strong class="hover:text-[#005ba4]">Una Kravets</strong><span>@una</span><img src="/src/twitter-svgrepo-com.svg" alt="" class="w-5 relative left-[60px] sm:left-[100px] md:left-[14rem] lg:left-[4rem]"></div>
+            <div class="body">VS <a class="text-[#005893] hover:underline" href="https://twitter.com/code" target="_blank">@code</a> does so many things right. I’m constantly impressed by the UX, and customizing workspace / user preferences is no exception. 🙌🏼💯 It just keeps getting better ❤️</div>
             </div>
           </div>
 
           <div class="user-3 flex gap-2">
-            <div class="user-avatar"><img class="rounded-full w-40" src="/src/Una.jpg" alt=""></div>
+            <div class="user-avatar"><img class="rounded-full w-[400px] lg:w-[300px]" src="/src/Una.jpg" alt=""></div>
             <div class="user-data">
-            <div class="user flex"><strong class="hover:text-[#005ba4]">Una Kravets</strong><span>@una</span><img src="/src/twitter-svgrepo-com.svg" alt="" class="w-5 relative left-[100px]"></div>
-            <div class="body w-[80%]">VS <a class="text-[#005893] hover:underline" href="https://twitter.com/code" target="_blank">@code</a> does so many things right. I’m constantly impressed by the UX, and customizing workspace / user preferences is no exception. 🙌🏼💯 It just keeps getting better ❤️</div>
+            <div class="user flex"><strong class="hover:text-[#005ba4]">Una Kravets</strong><span>@una</span><img src="/src/twitter-svgrepo-com.svg" alt="" class="w-5 relative left-[60px] sm:left-[100px] md:left-[14rem] lg:left-[4rem]"></div>
+            <div class="body">VS <a class="text-[#005893] hover:underline" href="https://twitter.com/code" target="_blank">@code</a> does so many things right. I’m constantly impressed by the UX, and customizing workspace / user preferences is no exception. 🙌🏼💯 It just keeps getting better ❤️</div>
             </div>
           </div>
         </div>
@@ -146,6 +146,7 @@
           </div>
         </div>
       </section>
+      <!-- social-proof section End-->
 
       <!-- Print statement debugging is a thing of the past. Section -->
       
@@ -175,7 +176,7 @@
       
       <section aria-label="extensible">
         <div class="extensible flex flex-col md:flex-row-reverse bg-[#F5F5F5] md:justify-around px-[10%] py-[70px]">
-          <div class="card-img"><img src="/src/Hundreds-of-Extensions.png" alt="" class="w-[360px]"></div>
+          <div class="card-img "><img src="/src/Hundreds-of-Extensions.png" alt="" class="object-cover w-[360px] hover:scale-110 transition duration-1000 ease-in-out"></div>
           <div class="card-description md:w-[50%] flex flex-col md:gap-5">
             <h3 class="text-[25px] py-5 font-light">Extensible and customizable.</h3>
             <p class="text-[.9rem] leading-[30px] w-[85%]">Want even more features? Install extensions to add new languages, themes, debuggers, and to connect to additional services. Extensions run in separate processes, ensuring they won't slow down your editor. Learn more about extensions.</p>
@@ -216,7 +217,7 @@
               <li class="flex"><img src="/src/yaml.svg" alt=""><span>YAML</span></li>
               <li class="flex md:justify-center col-span-2 md:col-span-4 lg:col-span-6"> <a class="text-blue-600 hover:underline" href="#">and many more languages on the Marketplace...</a></li>
             </ul>
-            <a href="#" class="self-center bg-[#0066b8] px-[3.2rem] py-3 my-5 text-stone-50 hover:bg-[#005ba4]">Get Started Now</a>
+            <a href="#" class="self-center bg-[#0066b8] px-[3.2rem] py-3 my-5 text-stone-50 hover:bg-[#005ba4] transition-color duration-200">Get Started Now</a>
           </div>
 
         </div>
@@ -322,14 +323,14 @@
 
       <section aria-label="vscode-features ">
         <section aria-label="vscode-features ">
-          <div class="vscode-features bg-[#F5F5F5] flex flex-col md:flex-row px-[10%] py-[45px] gap-20 justify-center">
+          <div class="vscode-features bg-[#F5F5F5] text-center flex flex-col  md:flex-row px-[10%] py-[45px] gap-20 justify-center items-center">
             <div class="vscode-features-left text-center">
-              <h3 class="font-medium text-[19px]">Want new features sooner?</h3>
+              <h3 class="font-medium text-[19px] px-[14%]">Want new features sooner?</h3>
               <p class="font-normal">Get the Insiders build instead.</p>
             </div>
             <div class="vscode-features-right text-center">
-              <h3 class="font-medium text-[19px] md:w-[85%] ">Use vscode.dev for quick edits online!</h3>
-              <p class="font-normal md:w-[85%]">GitHub, Azure Repos, and local files.</p>
+              <h3 class="font-medium text-[19px] px-[14%] ">Use vscode.dev for quick edits online!</h3>
+              <p class="font-normal ">GitHub, Azure Repos, and local files.</p>
             </div>
           </div>
         </section>
@@ -339,12 +340,13 @@
 
       <section aria-label="licence-privacy">
         <div class="license-privacy flex flex-col text-center justify-center items-center md:px-[10%] gap-5 bg-[#F5F5F5] ">
-          <h4 class="font-semibold text-[0.6rem] text-[#444]">LICENSE AND PRIVACY TERMS</h4>
-          <p class="text-[0.8rem] max-w-[60%] leading-[2rem]">
+          <h4 class="font-semibold text-[0.7rem] text-[#444]">LICENSE AND PRIVACY TERMS</h4>
+          <p class="text-[0.9rem] font-normal	max-w-[60%] leading-[2rem]">
             By downloading and using Visual Studio Code, you agree to the license terms and privacy statement. VS Code automatically sends telemetry data and crash dumps to help us improve the product. If you would prefer not to have this data sent please go see How to Disable Crash Reporting to learn how to disable it.
           </p>
         </div>
       </section>
+
 
     </div>
   </body>
