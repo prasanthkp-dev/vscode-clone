@@ -1,1 +1,1 @@
-LINK TO SITE [view](https://frabjous-mousse-caf818.netlify.app/).
+LINK TO SITE [VIEW](https://frabjous-mousse-caf818.netlify.app/).
