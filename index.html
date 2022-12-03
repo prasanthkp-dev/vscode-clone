@@ -12,7 +12,7 @@
 
       <!-- navbar section  -->
       
-      <section aria-label="navbar">
+<section aria-label="navbar">
         <div class="flex flex-row items-center justify-between bg-[#2C2C32] lg:gap-[30px] fixed top-0 w-[100%] z-[1] px-[5%] sm:px-[12%] lg:px-[5%]">
           <div class="flex gap-3 items-center text-stone-50">
             <img src="/src/logo.png" alt="logo" class="w-[25px]">
@@ -32,26 +32,26 @@
               <li class="hover:text-slate-50"><a href="#">Learn</a></li>
             </ul>
           </div>
-          <div class="flex flex-row  md:hidden lg:flex lg:justify-around">
+          <div class="flex flex-row lg:flex lg:justify-around">
             <div class="search-box ">
               <form action="" class="flex">
                 <div class="hidden md:flex md:flex-row w-[100%] md:justify-end">
                   <label class="hidden" for="search-doc">Search Docs</label>
                   <input class="hidden xl:flex focus:outline-none focus:bg-[#525257] bg-[#3d3d42] text-stone-50 pl-12 py-3 w-[70%]" type="text" id="search-doc" name="search" placeholder="Search Docs">
-                  <button type="submit" class="text-slate-700 absolute top-1 flex w-10 h-10">
+                  <button type="submit" class="text-slate-700 hidden absolute top-1 lg:flex w-10 h-10">
                     <img class="w-5 absolute top-3 md:left-[-40px] lg:top-[10px] lg:left-[8px] xl:left-[-108px]" src="/src/search.svg" alt="search-icon">
                     <span class="absolute top-1 text-transparent w-10 h-10">Submit</span>
                   </button>
                 </div>
               </form>
             </div>
-            <div class="downlaod hidden md:flex md:flex-row bg-[#005BA4] px-6 py-3 text-stone-50 hover:bg-[#005ba4]">
+            <div class="downlaod hidden lg:flex lg:flex-row bg-[#005BA4] px-6 py-3 text-stone-50 hover:bg-[#005ba4]">
               <a class="flex flex-row gap-4 font-semibold hover:bg-[#005ba4]" href="#">
                 <img class="w-5" src="/src/download.svg" alt="">
                 <span>Dowload</span>
               </a>
             </div>
-            <button class="sm:hidden text-[#fff] text-[2.3rem]">☰</button>
+            <button class="lg:hidden text-[#fff] text-[2.3rem]">☰</button>
           </div>
         </div>
       </section>
@@ -318,12 +318,10 @@
 
         </div>
       </section>
-
       <!-- vscode-features section  -->
-
       <section aria-label="vscode-features ">
         <section aria-label="vscode-features ">
-          <div class="vscode-features bg-[#F5F5F5] text-center flex flex-col  md:flex-row px-[10%] py-[45px] gap-20 justify-center items-center">
+          <div class="vscode-features bg-[#F5F5F5] text-center flex flex-col  lg:flex-row px-[10%] py-[45px] gap-20 justify-center items-center">
             <div class="vscode-features-left text-center">
               <h3 class="font-medium text-[19px] px-[14%]">Want new features sooner?</h3>
               <p class="font-normal">Get the Insiders build instead.</p>
@@ -335,19 +333,39 @@
           </div>
         </section>
       </section>
-      
       <!-- license and privacy term section  -->
-
       <section aria-label="licence-privacy">
-        <div class="license-privacy flex flex-col text-center justify-center items-center md:px-[10%] gap-5 bg-[#F5F5F5] ">
+        <div class="license-privacy flex flex-col text-center justify-center items-center md:px-[10%] gap-5 bg-[#F5F5F5] pb-[50px] ">
           <h4 class="font-semibold text-[0.7rem] text-[#444]">LICENSE AND PRIVACY TERMS</h4>
           <p class="text-[0.9rem] font-normal	max-w-[60%] leading-[2rem]">
             By downloading and using Visual Studio Code, you agree to the license terms and privacy statement. VS Code automatically sends telemetry data and crash dumps to help us improve the product. If you would prefer not to have this data sent please go see How to Disable Crash Reporting to learn how to disable it.
           </p>
         </div>
       </section>
-
-
+      <footer class="footer-first py-[5px] bg-[#2C2C32] flex flex-col lg:flex-row  lg:justify-between text-slate-50 text-xs lg:items-center md:text-center">
+        <div class="footer-left flex px-[5%] md:px-[2%]  lg:pl-[50px] gap-5">
+          <h5>Hello from SEattle.</h5>
+          <a href="#" class="hover:text-[#b4a0ff]">Follow @code</a>
+          <div class="footer-gh-section flex justify-center items-center gap-1">
+            <div class="gh-icon flex bg-stone-300 text-zinc-800 rounded font-bold px-[5px]">
+              <img class="gh-icon w-[10px]" src="/src/icons8-github.svg" alt="">
+              <h5>Star</h5>
+            </div>
+            <h5 class="gh-icon bg-stone-300 text-zinc-800 rounded font-bold px-[5px]">139,698</h5>
+          </div>
+        </div>
+        <div class="footer-right flex  px-[5%] md:px-[2%] py-[20px] md:pr-[100px] lg:gap-5 lg:justify-end items-center">
+          <div class="footer-links">
+            <ul class="flex gap-5 justify-center text-center items-center">
+              <li><a class="hover:text-[#b4a0ff]" href="#">Support</a></li>
+              <li><a class="hover:text-[#b4a0ff]" href="#">privacy</a></li>
+              <li><a class="hover:text-[#b4a0ff]" href="#">Terms of Use</a></li>
+              <li><a class="hover:text-[#b4a0ff]" href="#">Licence</a></li>
+              <li><a class="" href="#"><img class="w-[80px]" src="/src/microsoft-logo.png" alt="">© 2022 Microsoft</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
     </div>
   </body>
 </html>
